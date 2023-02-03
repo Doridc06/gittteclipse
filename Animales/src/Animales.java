@@ -1,6 +1,7 @@
 import java.util.Scanner;
+
 public class Animales {
- 
+
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
@@ -22,26 +23,34 @@ public class Animales {
       System.out.println("Cateforia: ");
       System.out.println("Desconocida");
     }
-   
+
     String especie = "";
     switch (codigoAnimal) {
-     
-      case 1: especie = "Morza";
-      break;
-      case 2: especie = "Elefante";
-      break;
-      case 8: especie = "Pantera";
-      break;
-      case 100: especie = "Ornitorrinco";
-      break;
-      case 101: especie = "Pinguino";
-      break;
-      case 105: especie = "Albatros";
-      break;
-      default: especie = "Desconocida";
+
+      case 1:
+        especie = "Morza";
+        break;
+      case 2:
+        especie = "Elefante";
+        break;
+      case 8:
+        especie = "Pantera";
+        break;
+      case 100:
+        especie = "Ornitorrinco";
+        break;
+      case 101:
+        especie = "Pinguino";
+        break;
+      case 105:
+        especie = "Albatros";
+        break;
+      default:
+        especie = "Desconocida";
+    }
+    System.out.println("Especie: \n" + especie);
   }
-    System.out.println("Especie: \n" + especie );
-}
+
 
 }
 
